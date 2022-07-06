@@ -1,0 +1,19 @@
+Default Golang Benchmark
+BenchmarkSliceOfPointers-12    	 876746     1377 ns/op	      480 B/op	      21 allocs/op
+BenchmarkSliceOfValues-12    	      2547940      489.4 ns/op      320 B/op	       1 allocs/op
+
+"prevent compiler optimizations"
+BenchmarkSliceOfPointers-12    	 820274	1406 ns/op	      480 B/op	      21 allocs/op
+BenchmarkSliceOfValues-12    	      2462025	 566.4 ns/op      320 B/op	       1 allocs/op
+
+
+Ginkgo/Gomega Benchmark
+slice of pointers
+      Name                                | N     | Min   | Median | Mean  | StdDev  | Max     
+      =========================================================================================
+      create slice of pointers [duration] | 10000 | 390ns | 416ns  | 606ns | 3.935µs | 358.25µs
+
+slice of values
+      Name                              | N     | Min  | Median | Mean  | StdDev | Max     
+      =====================================================================================
+      create slice of values [duration] | 10000 | 51ns | 60ns   | 116ns | 474ns  | 26.031µs

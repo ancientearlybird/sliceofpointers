@@ -1,0 +1,2 @@
+# sliceofpointers
+golang performance benchmark
